@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Nguyễn Văn A</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2b2d42;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .project img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    button {
+      background: #ef233c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d90429;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nguyễn Văn A</h1>
+    <p>Web Developer | Data Analyst | Designer</p>
+    <nav>
+      <a href="#about">Giới thiệu</a>
+      <a href="#cv">CV</a>
+      <a href="#projects">Dự án</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Giới thiệu</h2>
+    <img src="avatar.jpg" alt="Ảnh cá nhân">
+    <p>Xin chào! Mình là Nguyễn Văn A, lập trình viên web đam mê học hỏi và sáng tạo.
+      Mình chuyên về phát triển web frontend và backend, với kinh nghiệm trong HTML, CSS, JavaScript, và Python (Django).</p>
+  </section>
+
+  <section id="cv">
+    <h2>CV cá nhân</h2>
+    <p>Bạn có thể xem hoặc tải CV của mình tại đây:</p>
+    <a href="cv.pdf" target="_blank"><button>Xem CV</button></a>
+  </section>
+
+  <section id="projects">
+    <h2>Dự án tiêu biểu</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="project1.png" alt="Project 1">
+        <h3>Website bán hàng</h3>
+        <p>Trang web thương mại điện tử đơn giản với giỏ hàng và thanh toán online.</p>
+        <a href="https://github.com/username/project1" target="_blank">Xem code</a> |
+        <a href="https://project1-demo.com" target="_blank">Demo</a>
+      </div>
+      <div class="project">
+        <img src="project2.png" alt="Project 2">
+        <h3>Ứng dụng quản lý công việc</h3>
+        <p>App giúp theo dõi và phân loại công việc, được xây dựng bằng React.</p>
+        <a href="https://github.com/username/project2" target="_blank">Xem code</a> |
+        <a href="https://project2-demo.com" target="_blank">Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <p>Email: <a href="mailto:nguyenvana@gmail.com">nguyenvana@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Nguyễn Văn A | Thiết kế bởi chính mình ❤️</p>
+  </footer>
+</body>
+</html>
